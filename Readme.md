@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Т](https://up.htmlacademy.ru/adaptive/10/user/337911).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Цибизов](https://htmlacademy.ru/profile/vlad_blow).
 
 ---
 
