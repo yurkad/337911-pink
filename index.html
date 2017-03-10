@@ -4,9 +4,198 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+<body class="page-body">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="page-header">
+    <h1 class="page-header__logo">Pink</h1>
 
-  </body>
+    <nav class="main-nav">
+      <span class="main-nav__toggle main-nav__toggle--opened">Открыть меню</span>
+
+      <ul class="main-nav__items">
+        <li class="main-nav__item main-nav__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="intro">
+
+      <header class="intro__header">
+        <div class="intro__illustration">
+          <img src="http://placehold.it/320x395" alt="" width="320" height="395">
+        </div>
+      </header>
+
+      <div class="download">
+        <a href="#" class="btn download__btn">Скачать приложение</a>
+
+        <ul class="download__links">
+          <li><a href="#" class="download__link download__link--apple">AppStore</a></li>
+          <li><a href="#" class="download__link download__link--android">Play Market</a></li>
+          <li><a href="#" class="download__link download__link--windows">Windows</a></li>
+        </ul>
+
+        <p class="download__descr">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__slogan">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
+
+      <ul class="features__items">
+        <li class="features__item">
+          <h3 class="features__name">Поднимает настроение</h3>
+          <p class="features__descr">
+            Приложение позволит вам победить осеннюю хандру
+и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Меняет мир вокруг</h3>
+          <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Заводит новых друзей</h3>
+          <p class="features__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+
+      <div class="features__illustration">
+        <img src="http://placehold.it/320x280" alt="" width="320" height="280">
+      </div>
+    </section>
+
+    <section class="reviews">
+      <input type="radio" id="review-toggle-1" name="review-toggle" checked>
+      <input type="radio" id="review-toggle-2" name="review-toggle">
+      <input type="radio" id="review-toggle-2" name="review-toggle">
+
+      <div class="review__controls">
+        <label for="review-toggle-1"></label>
+        <label for="review-toggle-2"></label>
+        <label for="review-toggle-3"></label>
+      </div>
+
+      <div class="review">
+        <h3 class="review__author">Николай Петров</h3>
+        <blockquote class="review__quote">Это приложение перевернуло мой мир и позволило по-новому
+          взглянуть на привычные серые вещи! А еще я познакомился
+со своей будущей женой в комментариях к выложенной фотографии!
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="price">
+      <input type="radio" id="price-toggle-1" name="price-toggle">
+      <input type="radio" id="price-toggle-2" name="price-toggle" checked>
+      <input type="radio" id="price-toggle-3" name="price-toggle">
+
+      <div class="price__controls">
+        <label for="price-toggle-1"></label>
+        <label for="price-toggle-2"></label>
+        <label for="price-toggle-3"></label>
+      </div>
+
+      <div class="price__slider">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th class="price-table__tariff" colspan="2">
+              <span>База</span>
+              <span>1,99 USD</span>
+              </th>
+              <th class="price-table__tariff" colspan="2">
+              <span>Стандарт</span>
+              <span>3,99 USD</span>
+              </th>
+              <th class="price-table__tariff" colspan="2">
+              <span>Анлим</span>
+              <span>9,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="price-table__feature">Розовый фильтр</td>
+              <td class="price-table__check price-table__check--yes">да</td>
+
+              <td class="price-table__feature">Розовый фильтр</td>
+              <td class="price-table__check price-table__check--yes">да</td>
+
+              <td class="price-table__feature">Розовый фильтр</td>
+              <td class="price-table__check price-table__check--yes">да</td>
+            </tr>
+
+            <tr>
+              <td class="price-table__feature">Смайлики</td>
+              <td class="price-table__check price-table__check--no">нет</td>
+
+              <td class="price-table__feature">Смайлики</td>
+              <td class="price-table__check price-table__check--yes">да</td>
+
+              <td class="price-table__feature">Смайлики</td>
+              <td class="price-table__check price-table__check--yes">да</td>
+            </tr>
+
+            <tr>
+              <td class="price-table__feature">Комментарии</td>
+              <td class="price-table__check price-table__check--no">нет</td>
+
+              <td class="price-table__feature">Комментарии</td>
+              <td class="price-table__check price-table__check--no">нет</td>
+
+              <td class="price-table__feature">Комментарии</td>
+              <td class="price-table__check price-table__check--no">да</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="contacts">
+      <h2 class="сontacts__header">
+        Остались вопросы?<br>
+        Свяжитесь с нами!</h2>
+
+        <dl>
+          <dt class="contacts__title">Звоните</dt>
+          <dd class="contacts__value">
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </dd>
+
+          <dt class="contacts__title">Пишите</dt>
+          <dd class="contacts__value">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </dd>
+
+          <dt class="contacts__title">Приезжайте в гости</dt>
+          <dd class="contacts__value">ул. Большая Конюшенная, 19/8</dd>
+        </dl>
+
+      </div>
+
+      <div class="footer-map">
+        <img src="http://placehold.it/320x200" alt="Map" width="320" height="200">
+      </div>
+
+</body>
 </html>
