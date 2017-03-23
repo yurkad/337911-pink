@@ -1,0 +1,31 @@
+.contacts {
+  outline: 1px dashed red;
+  min-height: 310px;
+  padding-top: 37px;
+
+  &__wrapper {
+    @include container;
+  }
+
+  h2 {
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__value {
+    color: $pink;
+    text-align: center;
+
+    a {
+      color: $pink;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+}

@@ -1,0 +1,49 @@
+.main-nav {
+  outline: 2px dotted red;
+  float: right;
+
+  &__items {
+    @include no-list;
+
+    @media ($desktop-width) {
+      padding-top: 20px;
+    }
+  }
+
+  &__item {
+    display: none;
+
+    @media ($desktop-width) {
+      outline: 1px solid red;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 80px;
+      font-size: 18px;
+      line-height: 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  &__item--active {
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
+
+  &__toggle {
+    display: block;
+    width: 50px;
+    height: 25px;
+    background: url(../../img/icon-menu-burger.svg) no-repeat;
+    font-size: 0;
+    @media ($desktop-width) {
+      display: none;
+    }
+  }
+}

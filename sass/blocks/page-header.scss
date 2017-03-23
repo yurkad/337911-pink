@@ -1,0 +1,41 @@
+.page-header {
+  @include clearfix;
+  outline: 2px solid green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $dark-blue;
+
+  @media ($tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media ($desktop-width) {
+
+  }
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__logo {
+    outline: 2px dotted green;
+    float: left;
+    width: 80px;
+    height: 25px;
+    font-size: 0;
+    background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
+
+    @media ($tablet-width) {
+      width: 150px;
+      height: 42px;
+      background: url(../../img/logo-pink-blue-mobile.svg) no-repeat;
+    }
+
+    @media ($desktop-width) {
+      width: 148px;
+      height: 42px;
+      background: url(../../img/logo-pink-blue-mobile.svg) no-repeat;
+    }
+  }
+}

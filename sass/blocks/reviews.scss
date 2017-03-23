@@ -1,0 +1,8 @@
+.reviews {
+  outline: 2px dashed red;
+  min-height: 375px;
+
+  &__wrapper {
+    @include container;
+  }
+}

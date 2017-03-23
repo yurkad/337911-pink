@@ -1,0 +1,11 @@
+.user-interface {
+  outline: 1px dashed red;
+  @include clearfix;
+  min-height: 760px;
+  padding-top: 20px;
+  text-align: center;
+
+  &__tool {
+    display: block;
+  }
+}
