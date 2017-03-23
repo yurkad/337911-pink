@@ -1,0 +1,20 @@
+.intro {
+  outline: 1px dashed red;
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__heading {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 30px;
+    background-color: $body-font;;
+    color: #ffffff;
+  }
+
+}

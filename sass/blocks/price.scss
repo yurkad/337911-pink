@@ -1,0 +1,8 @@
+.price {
+  outline: 2px dashed blue;
+  min-height: 246px;
+
+  &__wrapper {
+    @include container;
+  }
+}

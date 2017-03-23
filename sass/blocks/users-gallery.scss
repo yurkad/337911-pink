@@ -1,0 +1,15 @@
+.users-gallery {
+  outline: 1px dashed red;
+
+  &__descr {
+    margin: 0;
+    outline: 1px dashed red;
+    padding-top: 53px;
+    padding-bottom: 58px;
+    text-align: center;
+  }
+
+  &__container {
+    font-size: 0;
+  }
+}

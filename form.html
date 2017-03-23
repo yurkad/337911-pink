@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="sass/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body class="page-body">
 
   <header class="page-header">
+    <div class="page-header__wrapper">
     <h1 class="page-header__logo">Pink</h1>
 
     <nav class="main-nav">
@@ -28,9 +31,11 @@
       </ul>
 
     </nav>
+  </div>
   </header>
 
   <main class="page-content">
+    <div class="page-content__wrapper">
     <div class="intro">
       <h2 class="intro__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
@@ -60,7 +65,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="contest-form">
+      <fieldset class="contest-form contest-form--achievments">
         <legend class="contest-form__heading">
           Ваши безбашенные достижения в путешествии
         </legend>
@@ -122,7 +127,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="contest-form">
+      <fieldset class="contest-form contest-form-app">
         <legend class="contest-form__heading">С каким приложением путешествовали?</legend>
 
         <p class="contest-form__element">
@@ -156,9 +161,11 @@
       <p class="contest-form__note"><span class="contest-form__star">*</span> — обязательные поля</p>
     </form>
 
+  </div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
     <img class="page-footer__logo" src="http://placehold.it/150x40" alt="Pink" width="150" height="40">
 
     <div class="page-footer__social">
@@ -173,6 +180,7 @@
       <span>Разработано</span>
       <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
     </div>
+  </div>
   </footer>
 
 </body>

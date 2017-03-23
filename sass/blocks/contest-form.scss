@@ -1,0 +1,30 @@
+.contest-form {
+  outline: 1px dashed red;
+  padding-top: 55px;
+
+  &--achievments, &-app {
+    background-color: $light-grey;
+  }
+
+  &__descr {
+    padding-bottom: 50px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__submit {
+    outline: 2px solid green;
+    display: block;
+    padding: 25px 47px;
+  }
+
+  &__note {
+    display: block;
+  }
+
+  &__heading, &__label {
+    color: $pink;
+    text-align: center;
+  }
+}

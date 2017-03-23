@@ -1,0 +1,22 @@
+.page-footer {
+  outline: 2px dotted green;
+  padding-top: 37px;
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__copyright {
+    outline: 2px dotted green;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+
+  }
+}

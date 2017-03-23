@@ -1,0 +1,9 @@
+.download {
+  outline: 1px dashed red;
+  color: #FFFFFF;
+  background-color: $dark-blue;
+
+  &__links {
+    @include no-list;
+  }
+}
