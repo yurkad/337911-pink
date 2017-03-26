@@ -90,7 +90,7 @@
 
   &__item:last-child {
     @media ($tablet-width) {
-       @include clearfix();
+      @include clearfix();
       width: 100%;
       float: left;
     }
