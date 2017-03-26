@@ -3,9 +3,51 @@
   @include clearfix;
   min-height: 760px;
   padding-top: 20px;
-  text-align: center;
+  @media ($tablet-width) {
+    min-height: 510px;
+  }
+  @media ($desktop-width) {
+    min-height: 510px;
+  }
 
-  &__tool {
+  &__image {
     display: block;
+    @media ($tablet-width) {
+      float: left;
+    }
+    @media ($desktop-width) {
+      float: left;
+    }
+  }
+
+  &__tools {
+    display: block;
+    @media ($tablet-width) {
+      float: right;
+    }
+    @media ($desktop-width) {
+      float: right;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 30px;
+    outline: 2px solid hotpink;
+    font-size: 0;
+  }
+
+  &__input {
+    display: block;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 20px 70px;
+    margin-bottom: 15px;
+    outline: 2px solid hotpink;
   }
 }

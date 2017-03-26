@@ -3,9 +3,57 @@
   margin-bottom: 20px;
   display: block;
   width: 280px;
+  @media ($tablet-width) {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    min-height: 455px;
+    margin-right: 20px;
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+      outline: 4px solid yellow;
+    }
+  }
+  @media ($desktop-width) {
+    min-height: 555px;
+
+    &:nth-child(2n+1) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n+4) {
+      margin-right: 0;
+      outline: 4px solid orange;
+    }
+  }
+
+  &--panorama {
+    margin-right: 0;
+    @media ($tablet-width) {
+      display: block;
+      width: auto;
+    }
+    @media ($desktop-width) {
+      display: block;
+      width: auto;
+    }
+  }
 
   &__photo--panorama {
     margin: 0 -20px;
+    @media ($tablet-width) {
+      outline: 2px dotted blue;
+      display: block;
+      width: auto;
+      margin: 0 -40px;
+    }
+    @media ($desktop-width) {
+      outline: 2px dotted blue;
+      display: block;
+      width: auto;
+      margin: 0 -130px;
+    }
   }
 
   &__image {
@@ -18,5 +66,11 @@
     background-color: $light-grey;
     padding: 0 23px;
     font-size: 14px;
+    @media ($tablet-width) {
+      padding: 0 30px;
+    }
+    @media ($desktop-width) {
+      padding: 0 30px;
+    }
   }
 }

@@ -1,9 +1,108 @@
 .download {
-  outline: 1px dashed red;
   color: #FFFFFF;
-  background-color: $dark-blue;
+  @media ($tablet-width) {
+    width: 250px;
+  }
+  @media ($desktop-width) {
+    width: 300px;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 18px 33px;
+    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    @media ($tablet-width) {
+      margin-bottom: 60px;
+    }
+    @media ($desktop-width) {
+      font-size: 21px;
+      padding: 18px 20px;
+    }
+  }
 
   &__links {
     @include no-list;
+    display: block;
+    margin: 0 auto;
+    font-size: 0;
+    width: 230px;
+    margin-bottom: 30px;
+    @media ($tablet-width) {
+      margin-bottom: 40px;
+    }
+    @media ($desktop-width) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__icons {
+    display: inline-block;
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+
+    &--apple {
+      background: url("../../img/logo-apple.svg") no-repeat 50% 50%;
+    }
+
+    &--android {
+      background: url("../../img/logo-android.svg") no-repeat 50% 50%;
+    }
+
+    &--windows {
+      background: url("../../img/logo-microsoft.svg") no-repeat 50% 50%;
+    }
+  }
+
+  h2 {
+    display: none;
+    margin: 0;
+    @media ($tablet-width) {
+      display: block;
+      margin: 55px 40px 0;
+      font-family: 'Open Sans Light','Arial', sans-serif;
+      font-weight: lighter;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+    }
+    @media ($desktop-width) {
+      display: block;
+      margin-top: 50px;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    @media ($tablet-width) {
+      font-size: 18px;
+    }
   }
 }

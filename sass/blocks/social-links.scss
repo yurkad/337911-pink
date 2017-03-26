@@ -4,4 +4,10 @@
   margin: 0 auto;
   width: 175px;
   margin-bottom: 35px;
+  @media ($tablet-width) {
+    float: left;
+  }
+  @media ($desktop-width) {
+    float: left;
+  }
 }

@@ -1,8 +1,43 @@
 .intro {
-  outline: 1px dashed red;
+  outline: 3px dotted purple;
+  position: relative;
+  z-index: -1;
+  top: -66px;
+  padding-top: 66px;
+  background-color: $body-font;
+  color: white;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 27%, center top;
+  @media ($tablet-width) {
+    top: -110px;
+    padding-top: 110px;
+  }
+  @media ($desktop-width) {
+    top: -110px;
+    padding-top: 110px;
+  }
 
   &__wrapper {
     @include container;
+  }
+
+  &--main {
+    background-image: url(../../img/iphone-hand-mobile@1x.png), url("../../img/bg-back-mobile@1x.jpg");
+    min-height: 458px;
+    position: relative;
+    top: -66px;
+    padding-top: 456px;
+    @media ($tablet-width) {
+      min-height: 614px;
+      top: -110px;
+      padding: 110px 0;
+    }
+    @media ($desktop-width) {
+      min-height: 752px;
+      top: -110px;
+      padding: 110px 0;
+    }
   }
 
   &__heading {
@@ -11,10 +46,16 @@
     padding-bottom: 55px;
     text-align: center;
     font-size: 24px;
-    font-weight: lighter;
     line-height: 30px;
-    background-color: $body-font;;
-    color: #ffffff;
+    @media ($tablet-width) {
+      padding-top: 85px;
+      padding-bottom: 82px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+    @media ($desktop-width) {
+      padding-top: 82px;
+      padding-bottom: 108px;
+    }
   }
-
 }

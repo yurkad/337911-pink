@@ -1,15 +1,43 @@
 .page-footer {
   outline: 2px dotted green;
   padding-top: 37px;
+  @media ($tablet-width) {
+    padding-top: 35px;
+  }
+  @media ($desktop-width) {
+    padding-top: 65px;
+  }
 
   &__wrapper {
     @include container;
   }
 
-  &__logo {
+  &__links {
+    @include clearfix;
     margin: 0 auto;
-    margin-bottom: 35px;
     text-align: center;
+    @media ($tablet-width) {
+      display: block;
+      height: 126px;
+    }
+    @media ($desktop-width) {
+      display: block;
+      height: 190px;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 35px;
+    text-align: center;
+    @media ($tablet-width) {
+      float: left;
+      width: 145px;
+      margin-right: 73px;
+    }
+    @media ($desktop-width) {
+      width: 149px;
+      margin-right: 230px;
+    }
   }
 
   &__copyright {
@@ -17,6 +45,13 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 90px;
-
+    @media ($tablet-width) {
+      width: 125px;
+      float: right;
+    }
+    @media ($desktop-width) {
+      width: 150px;
+      float: right;
+    }
   }
 }

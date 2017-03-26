@@ -10,13 +10,11 @@
   outline: 2px dashed yellowgreen;
   width: 280px;
   margin: 0 auto;
-
   @media ($tablet-width) {
-      width: 620px;
+    width: 620px;
   }
-
   @media ($desktop-width) {
-      width: 940px;
+    width: 940px;
   }
 }
 

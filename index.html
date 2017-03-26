@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <link href="sass/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="sass/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
 <body class="page-body">
 
   <header class="page-header">
@@ -38,33 +40,28 @@
     <section class="intro intro--main" id="intro">
       <div class="intro__wrapper">
 
-        <header class="intro__header">
-          <div class="intro__illustration">
-            <img src="http://placehold.it/320x395" alt="" width="320" height="395">
-          </div>
-        </header>
-
         <div class="download">
-        <a href="#" class="btn download__btn">Скачать приложение</a>
+          <h2 class="download-info__heading">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="btn download__btn">Скачать приложение</a>
 
-        <ul class="download__links">
-          <li><a href="#" class="download__link download__link--apple">AppStore</a></li>
-          <li><a href="#" class="download__link download__link--android">Play Market</a></li>
-          <li><a href="#" class="download__link download__link--windows">Windows</a></li>
-        </ul>
+          <ul class="download__links">
+            <li class="download__icons"><a href="#" class="download__link download__link--apple">AppStore</a></li>
+            <li class="download__icons"><a href="#" class="download__link download__link--android">Play Market</a></li>
+            <li class="download__icons"><a href="#" class="download__link download__link--windows">Windows</a></li>
+          </ul>
 
-        <p class="download__descr">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+          <p class="download__descr">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
-    </div>
     </section>
 
     <section class="features">
       <div class="features__wrapper">
         <div class="features__slogan">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
+          <p class="features__slogan-line">Устали от серости мегаполиса?</p>
+          <p class="features__slogan-line">Нам есть, что вам предложить!</p>
         </div>
 
         <ul class="features__items">
@@ -76,14 +73,16 @@
             <h3 class="features__name">Меняет мир вокруг</h3>
             <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--last">
             <h3 class="features__name">Заводит новых друзей</h3>
             <p class="features__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
 
-        <div class="features__illustration">
-          <img src="http://placehold.it/320x280" alt="" width="320" height="280">
+        <div class="features__effect">
+          <h3 class="features__effect-heading">Эффект на 24 часа!</h3>
+          <p class="features__effect-description">Британские ученые провели исследования и&nbsp;доказали,, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+          <a href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>
@@ -102,82 +101,80 @@
 
         <div class="review">
           <h3 class="review__author">Николай Петров</h3>
-          <blockquote class="review__quote">Это приложение перевернуло мой мир и позволило по-новому
-          взглянуть на привычные серые вещи! А еще я познакомился
-со своей будущей женой в комментариях к выложенной фотографии!
+          <blockquote class="review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
           </blockquote>
         </div>
       </div>
-      </section>
+    </section>
 
     <section class="price">
       <div class="price__wrapper">
-      <input type="radio" id="price-toggle-1" name="price-toggle">
-      <input type="radio" id="price-toggle-2" name="price-toggle" checked>
-      <input type="radio" id="price-toggle-3" name="price-toggle">
+        <input type="radio" id="price-toggle-1" name="price-toggle">
+        <input type="radio" id="price-toggle-2" name="price-toggle" checked>
+        <input type="radio" id="price-toggle-3" name="price-toggle">
 
-      <div class="price__controls">
-        <label for="price-toggle-1"></label>
-        <label for="price-toggle-2"></label>
-        <label for="price-toggle-3"></label>
+        <div class="price__controls">
+          <label for="price-toggle-1"></label>
+          <label for="price-toggle-2"></label>
+          <label for="price-toggle-3"></label>
+        </div>
+
+        <div class="price__slider">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th class="price-table__tariff" colspan="2">
+                  <span>База</span>
+                  <span>1,99 USD</span>
+                </th>
+                <th class="price-table__tariff" colspan="2">
+                  <span>Стандарт</span>
+                  <span>3,99 USD</span>
+                </th>
+                <th class="price-table__tariff" colspan="2">
+                  <span>Анлим</span>
+                  <span>9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="price-table__feature">Розовый фильтр</td>
+                <td class="price-table__check price-table__check--yes">да</td>
+
+                <td class="price-table__feature">Розовый фильтр</td>
+                <td class="price-table__check price-table__check--yes">да</td>
+
+                <td class="price-table__feature">Розовый фильтр</td>
+                <td class="price-table__check price-table__check--yes">да</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__feature">Смайлики</td>
+                <td class="price-table__check price-table__check--no">нет</td>
+
+                <td class="price-table__feature">Смайлики</td>
+                <td class="price-table__check price-table__check--yes">да</td>
+
+                <td class="price-table__feature">Смайлики</td>
+                <td class="price-table__check price-table__check--yes">да</td>
+              </tr>
+
+              <tr>
+                <td class="price-table__feature">Комментарии</td>
+                <td class="price-table__check price-table__check--no">нет</td>
+
+                <td class="price-table__feature">Комментарии</td>
+                <td class="price-table__check price-table__check--no">нет</td>
+
+                <td class="price-table__feature">Комментарии</td>
+                <td class="price-table__check price-table__check--no">да</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-
-      <div class="price__slider">
-        <table class="price-table">
-          <thead>
-            <tr>
-              <th class="price-table__tariff" colspan="2">
-              <span>База</span>
-              <span>1,99 USD</span>
-              </th>
-              <th class="price-table__tariff" colspan="2">
-              <span>Стандарт</span>
-              <span>3,99 USD</span>
-              </th>
-              <th class="price-table__tariff" colspan="2">
-              <span>Анлим</span>
-              <span>9,99 USD</span>
-              </th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td class="price-table__feature">Розовый фильтр</td>
-              <td class="price-table__check price-table__check--yes">да</td>
-
-              <td class="price-table__feature">Розовый фильтр</td>
-              <td class="price-table__check price-table__check--yes">да</td>
-
-              <td class="price-table__feature">Розовый фильтр</td>
-              <td class="price-table__check price-table__check--yes">да</td>
-            </tr>
-
-            <tr>
-              <td class="price-table__feature">Смайлики</td>
-              <td class="price-table__check price-table__check--no">нет</td>
-
-              <td class="price-table__feature">Смайлики</td>
-              <td class="price-table__check price-table__check--yes">да</td>
-
-              <td class="price-table__feature">Смайлики</td>
-              <td class="price-table__check price-table__check--yes">да</td>
-            </tr>
-
-            <tr>
-              <td class="price-table__feature">Комментарии</td>
-              <td class="price-table__check price-table__check--no">нет</td>
-
-              <td class="price-table__feature">Комментарии</td>
-              <td class="price-table__check price-table__check--no">нет</td>
-
-              <td class="price-table__feature">Комментарии</td>
-              <td class="price-table__check price-table__check--no">да</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
     </section>
   </main>
 
@@ -187,27 +184,34 @@
         Остались вопросы?<br>
         Свяжитесь с нами!</h2>
 
-        <dl>
-          <dt class="contacts__title">Звоните</dt>
+      <div class="contacts__items">
+        <dl class="contacts__item">
+          <dt class="contacts__title">Звоните:</dt>
           <dd class="contacts__value">
             <a href="tel:+78125556666">+7 (812) 555-66-66</a>
           </dd>
+        </dl>
 
-          <dt class="contacts__title">Пишите</dt>
+        <dl class="contacts__item">
+          <dt class="contacts__title">Пишите:</dt>
           <dd class="contacts__value">
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </dd>
+        </dl>
 
-          <dt class="contacts__title">Приезжайте в гости</dt>
+        <dl class="contacts__item">
+          <dt class="contacts__title">Приезжайте в гости:</dt>
           <dd class="contacts__value">ул. Большая Конюшенная, 19/8</dd>
         </dl>
 
       </div>
-      </div>
+    </div>
+  </div>
 
-      <div class="footer-map">
-        <img src="http://placehold.it/320x200" alt="Map" width="320" height="200">
-      </div>
+  <div class="footer-map">
+    <img src="http://placehold.it/320x200" alt="Map" width="320" height="200">
+  </div>
 
 </body>
+
 </html>
