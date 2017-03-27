@@ -2,8 +2,12 @@
   outline: 1px dashed red;
   padding-top: 55px;
 
-  &--achievments, &-app {
-    background-color: $light-grey;
+  @media ($tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 100px;
   }
 
   &__descr {
@@ -11,20 +15,110 @@
     font-size: 14px;
     line-height: 30px;
     text-align: center;
+
+    @media ($tablet-width) {
+      padding-bottom: 80px;
+      font-size: 18px;
+    }
+
+    @media ($desktop-width) {
+      padding-bottom: 85px;
+      font-size: 18px;
+    }
+  }
+
+  &__field {
+    padding: 0;
+    outline: 2px dotted deeppink;
+    display: block;
+
+    @media ($tablet-width) {
+      padding: 52px 60px;
+    }
+
+    @media ($desktop-width) {
+
+    }
+
+    &--name {
+      padding-bottom: 40px;
+
+      @media ($desktop-width) {
+        width: 434px;
+      }
+    }
+
+    &--achievements {
+      padding-bottom: 45px;
+    }
+
+    &--contacts {
+      padding-bottom: 50px;
+
+      @media ($desktop-width) {
+        @include clearfix;
+      }
+    }
+
+    &--app {
+      padding-bottom: 40px;
+
+      @media ($desktop-width) {
+        width: 432px;
+      }
+    }
+
+    &--feedback {
+      padding-bottom: 45px;
+    }
+  }
+  &__submit-block {
+    @media ($tablet-width) {
+      @include clearfix;
+    }
   }
 
   &__submit {
-    outline: 2px solid green;
+    outline: 2px solid forestgreen;
     display: block;
     padding: 25px 47px;
+
+    @media ($tablet-width) {
+      float: left;
+    }
   }
 
   &__note {
     display: block;
+
+    @media ($tablet-width) {
+      float: right;
+    }
   }
 
-  &__heading, &__label {
-    color: $pink;
-    text-align: center;
+  &__element--phone {
+    @media ($desktop-width) {
+      width: 373px;
+      float: left;
+    }
+  }
+
+  &__element--address {
+    @media ($desktop-width) {
+      width: 373px;
+      float: right;
+    }
+  }
+
+  &__legend--contacts {
+    display: none;
+
+    @media ($tablet-width) {
+      display: block;
+    }
+
+    @media ($desktop-width) {
+      display: block;
+    }
   }
 }

@@ -2,30 +2,103 @@
   outline: 1px dashed red;
   min-height: 310px;
   padding-top: 37px;
-
-  &__wrapper {
-    @include container;
+  @media ($tablet-width) {
+    min-height: 400px;
+  }
+  @media ($desktop-width) {
+    min-height: 370px;
   }
 
   h2 {
+    font-family: 'Open Sans Light','Arial', sans-serif;
     font-weight: lighter;
+    font-size: 24px;
+    line-height: 30px;
     text-align: center;
+    @media ($tablet-width) {
+      padding: 0 70px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    @media ($desktop-width) {
+      padding: 0 200px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 
   &__title {
+    font-family: 'Open Sans Bold','Arial', sans-serif;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
   }
 
   &__value {
-    color: $pink;
-    text-align: center;
-
     a {
       color: $pink;
-      text-align: center;
       text-decoration: none;
+    }
+    margin: 0;
+    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: $pink;
+  }
+
+  &__items {
+    display: block;
+    text-align: center;
+  }
+
+  &__item {
+    display: block;
+    @media ($tablet-width) {
+      float: left;
+    }
+    @media ($desktop-width) {
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+      width: 30%;
     }
   }
 
+  &__item:first-child {
+    @media ($tablet-width) {
+      float: left;
+    }
+    @media ($desktop-width) {
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media ($tablet-width) {
+      float: right;
+    }
+    @media ($desktop-width) {
+      display: inline-block;
+      float: none;
+      width: 30%;
+    }
+  }
+
+  &__item:last-child {
+    @media ($tablet-width) {
+      @include clearfix();
+      width: 100%;
+      float: left;
+    }
+    @media ($desktop-width) {
+      display: inline-block;
+      float: left;
+      width: 30%;
+      clear: none;
+    }
+  }
 }
