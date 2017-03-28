@@ -1,0 +1,12 @@
+.footer-map {
+  min-height: 200px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+
+  @media ($tablet-width) {
+    min-height: 378px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 503px;
+  }
+}
