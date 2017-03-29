@@ -63,7 +63,7 @@
         order: 3;
       }
       @media ($desktop-width) {
-         @include clearfix;
+        @include clearfix;
       }
     }
 
@@ -169,7 +169,7 @@
 
   &__submit-block {
     @media ($tablet-width) {
-       @include clearfix;
+      @include clearfix;
       order: 6;
       flex-basis: 100%;
     }
