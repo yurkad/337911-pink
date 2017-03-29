@@ -1,8 +1,8 @@
 .user-interface {
-  outline: 1px dashed red;
   @include clearfix;
   min-height: 760px;
   padding-top: 20px;
+  background-color: $light-grey;
   @media ($tablet-width) {
     min-height: 510px;
   }
@@ -10,8 +10,16 @@
     min-height: 510px;
   }
 
+  &__wrapper {
+    @include container;
+  }
+
   &__image {
     display: block;
+    width: 280px;
+    margin: 0 auto 38px;
+    font-size: 0;
+    line-height: 0;
     @media ($tablet-width) {
       float: left;
     }
@@ -20,10 +28,25 @@
     }
   }
 
+  &__tools-icons {
+    outline: 1px dashed red;
+    display: block;
+    width: 215px;
+    margin: 0 auto 38px;
+    font-size: 0;
+    @media ($tablet-width) {
+      width: 46px;
+      float: left;
+      margin-bottom: 100px;
+    }
+  }
+
   &__tools {
+    outline: 1px dashed green;
     display: block;
     @media ($tablet-width) {
       float: right;
+      display: inline-block;
     }
     @media ($desktop-width) {
       float: right;
@@ -32,22 +55,88 @@
 
   &__icon {
     display: inline-block;
+    vertical-align: middle;
     width: 45px;
     height: 45px;
-    margin-right: 30px;
-    outline: 2px solid hotpink;
+    margin-right: 40px;
     font-size: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    @media ($tablet-width) {
+      display: block;
+      margin-bottom: 25px;
+    }
+    @media ($desktop-width) {
+      display: block;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--crop {
+      width: 46px;
+      height: 44px;
+      background-image: url("../../img/icon-editor-crop.svg");
+    }
+
+    &--fill {
+      width: 48px;
+      height: 44px;
+      background-image: url("../../img/icon-editor-fill.svg");
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 33px;
+      background-image: url("../../img/icon-editor-contrast.svg");
+    }
   }
 
   &__input {
-    display: block;
+    display: none;
+    margin: 0 auto 35px;
+
+    &--selected {
+      display: block;
+      width: 280px;
+    }
+    @media ($tablet-width) {
+      display: block;
+      width: 180px;
+      margin-top: 20px;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
   }
 
   &__btn {
+    outline: 1px dashed green;
     display: block;
-    width: 100%;
+    width: 280px;
     padding: 20px 70px;
-    margin-bottom: 15px;
-    outline: 2px solid hotpink;
+    margin: 15px auto;
+    border: 2px solid $pink;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: $pink;
+    @media ($desktop-width) {
+      display: inline-block;
+      width: 180px;
+      padding: 20px 30px;
+      margin-left: 30px;
+    }
+
+    &--disabled {
+      color: $middle-grey;
+      border-color: $middle-grey;
+    }
   }
 }

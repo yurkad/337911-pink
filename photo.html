@@ -37,34 +37,40 @@
   </header>
 
   <main class="page-content">
-    <div class="page-content__wrapper">
-      <section class="intro" id="intro">
-        <h2 class="intro__heading">Фотографии пользователей</h2>
-      </section>
+    <section class="intro" id="intro">
+      <h2 class="intro__heading">Фотографии пользователей</h2>
+    </section>
 
-      <section class="users-gallery">
-        <p class="users-gallery__descr">
+    <section class="users-gallery">
+      <div class="users-gallery__descr">
+        <div class="users-gallery__wrapper">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
+        </div>
+      </div>
 
-        <div class="users-gallery__container">
-          <article class="photos-item photos-item--panorama">
-            <div class="photos-item__photo photos-item__photo--panorama">
-              <img class="photos-item__image" src="http://placehold.it/320x137" alt="панорама" width="320" height="137">
-            </div>
-            <ul class="photos-item__descr">
-              <li class="photos-item__author">Анна</li>
-              <li class="photos-item__time">5 минут назад</li>
-              <li class="photos-item__comment">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
-              </li>
-              <li class="photos-item__likes">Нравится: 215</li>
-            </ul>
-          </article>
 
+      <article class="photos-item__panorama">
+        <div class="photos-item__photo photos-item__photo--panorama">
+          <img class="photos-item__image" src="img/panorama-mobile@1x.jpg" alt="панорама">
+        </div>
+
+        <div class="users-gallery__panorama-wrapper">
+          <ul class="photos-item__descr photos-item__descr--panorama">
+            <li class="photos-item__author">Анна</li>
+            <li class="photos-item__time">5 минут назад</li>
+            <li class="photos-item__comment">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </li>
+            <li class="photos-item__likes photos-item__likes--panorama">Нравится: 215</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="users-gallery__container">
+        <div class="users-gallery__wrapper">
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-1-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Левон</li>
@@ -78,7 +84,7 @@
 
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-2-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Антон</li>
@@ -92,7 +98,7 @@
 
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-3-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Борис</li>
@@ -106,7 +112,7 @@
 
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-4-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Сергей</li>
@@ -120,7 +126,7 @@
 
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-5-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Максим</li>
@@ -134,7 +140,7 @@
 
           <article class="photos-item">
             <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="фото" width="280" height="180">
+              <img src="img/photo-6-mobile@1x.jpg" alt="фото пользователя">
             </div>
             <ul class="photos-item__descr">
               <li class="photos-item__author">Надежда</li>
@@ -145,58 +151,75 @@
               <li class="photos-item__likes">Нравится: 2560</li>
             </ul>
           </article>
-        </div>
-      </section>
 
-      <section class="user-interface">
-        <div class="user-interface__promo">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+          <div class="users-gallery__promo">
+            Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="user-interface">
+      <div class="user-interface__wrapper">
 
         <div class="user-interface__image">
-          <img src="http://placehold.it/280x375" alt="" width="280" height="375">
+          <img src="img/photo-7-mobile@1x.jpg" alt="пример фото">
         </div>
 
         <form class="user-interface__tools" action="https://echo.htmlacademy.ru" method="get">
-          <label class="user-interface__icon user-interface__tool--crop" for="crop-input">Кадрирование</label>
-          <label class="user-interface__icon user-interface__tool--fill" for="fill-input">Заливка</label>
-          <label class="user-interface__icon user-interface__tool--contrast" for="contrast-input">Контраст</label>
 
-          <input class="user-interface__input" type="range" name="crop" id="crop-input">
+          <input type="radio" id="setting-1" name="controls" checked>
+          <input type="radio" id="setting-2" name="controls">
+          <input type="radio" id="setting-3" name="controls">
+
+          <div class="user-interface__tools-icons">
+            <label class="user-interface__icon user-interface__icon--crop" for="setting-1">Кадрирование
+              </label>
+            <label class="user-interface__icon user-interface__icon--fill" for="setting-2">Заливка
+              </label>
+            <label class="user-interface__icon user-interface__icon--contrast" for="setting-3">Контраст
+              </label>
+          </div>
+
+          <input class="user-interface__input user-interface__input--selected" type="range" name="crop" id="crop-input">
           <input class="user-interface__input" type="range" name="fill" id="fill-input">
           <input class="user-interface__input" type="range" name="contrast" id="contrast-input">
 
           <input type="submit" class="user-interface__btn user-interface__btn-active" value="Запостить">
           <input type="reset" class="user-interface__btn user-interface__btn--disabled" value="Отмена">
         </form>
-      </section>
-    </div>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <img src="http://placehold.it/150x40" alt="Pink" width="150" height="40">
+    <div class="page-footer__links">
+      <div class="page-footer__links-wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+        </div>
+
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
 
-      <ul class="social-links">
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
-        </li>
-      </ul>
-
-      <div class="page-footer__copyright">
-        <span>Разработано</span>
-        <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
-      </div>
     </div>
   </footer>
+
 
 </body>
 

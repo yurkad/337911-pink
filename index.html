@@ -41,7 +41,7 @@
       <div class="intro__wrapper">
 
         <div class="download">
-          <h2 class="download-info__heading">Взгляните на жизнь иначе!</h2>
+          <h2 class="download__heading">Взгляните на жизнь иначе!</h2>
           <a href="#" class="btn download__btn">Скачать приложение</a>
 
           <ul class="download__links">
@@ -60,8 +60,8 @@
     <section class="features">
       <div class="features__wrapper">
         <div class="features__slogan">
-          <p class="features__slogan-line">Устали от серости мегаполиса?</p>
-          <p class="features__slogan-line">Нам есть, что вам предложить!</p>
+          <p class="features__slogan__line">Устали от серости мегаполиса?</p>
+          <p class="features__slogan__line slogan__line--second">Нам есть, что вам предложить!</p>
         </div>
 
         <ul class="features__items">
@@ -80,9 +80,11 @@
         </ul>
 
         <div class="features__effect">
-          <h3 class="features__effect-heading">Эффект на 24 часа!</h3>
-          <p class="features__effect-description">Британские ученые провели исследования и&nbsp;доказали,, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-          <a href="#">Узнать больше об исследовании</a>
+          <div class="effect__content">
+            <h3 class="features__effect__heading">Эффект на 24 часа!</h3>
+            <p class="features__effect__descr">Британские ученые провели исследования и&nbsp;доказали,, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a href="#" class="features__effect__link">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
     </section>
@@ -180,7 +182,7 @@
 
   <div class="contacts">
     <div class="contacts__wrapper">
-      <h2 class="сontacts__header">
+      <h2 class="contacts__header">
         Остались вопросы?<br>
         Свяжитесь с нами!</h2>
 
@@ -208,9 +210,35 @@
     </div>
   </div>
 
-  <div class="footer-map">
-    <img src="http://placehold.it/320x200" alt="Map" width="320" height="200">
+  <div class="footer-map" id="map"></div>
+  <div class="page-footer__links page-footer__links--main">
+    <div class="page-footer__links-wrapper">
+      <div class="page-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+      </div>
+
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
+      </div>
+    </div>
+
   </div>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/map.js"></script>
 
 </body>
 

@@ -1,11 +1,10 @@
 .page-footer {
-  outline: 2px dotted green;
   padding-top: 37px;
   @media ($tablet-width) {
-    padding-top: 35px;
+    padding-top: 0;
   }
   @media ($desktop-width) {
-    padding-top: 65px;
+    padding-top: 0;
   }
 
   &__wrapper {
@@ -13,45 +12,78 @@
   }
 
   &__links {
-    @include clearfix;
     margin: 0 auto;
     text-align: center;
+
+    &-wrapper {
+      @include container;
+      @media ($tablet-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &--main {
+      display: none;
+    }
     @media ($tablet-width) {
       display: block;
-      height: 126px;
+      padding: 35px 0;
     }
     @media ($desktop-width) {
       display: block;
-      height: 190px;
+      padding: 55px 0;
     }
   }
 
   &__logo {
-    margin: 0 auto 35px;
+    width: 149px;
     text-align: center;
+    @media ($mobile-width-only) {
+      margin: 0 auto 35px;
+    }
     @media ($tablet-width) {
-      float: left;
-      width: 145px;
-      margin-right: 73px;
+      flex-basis: 145px;
     }
     @media ($desktop-width) {
-      width: 149px;
-      margin-right: 230px;
+      flex-basis: 149px;
     }
   }
 
   &__copyright {
-    outline: 2px dotted green;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 90px;
+    @media ($mobile-width-only) {
+      margin: 0 auto 45px;
+    }
     @media ($tablet-width) {
-      width: 125px;
-      float: right;
+      flex-basis: 135px;
     }
     @media ($desktop-width) {
-      width: 150px;
-      float: right;
+      flex-basis: 160px;
     }
+  }
+
+  &__copyright-text {
+    @media ($tablet-width) {
+      font-family: 'Open Sans','Arial', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media ($desktop-width) {
+      font-size: 18px;
+    }
+  }
+
+  &__copyright-link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 35px;
+    margin-left: 15px;
+    font-size: 0;
+    background-image: url("../../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

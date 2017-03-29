@@ -1,61 +1,61 @@
 .intro {
-  outline: 3px dotted purple;
-  position: relative;
-  z-index: -1;
-  top: -66px;
-  padding-top: 66px;
+  margin-top: -72px;
+  padding: 100px 20px 40px;
   background-color: $body-font;
-  color: white;
+  z-index: -1;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 27%, center top;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #FFFFFF;
   @media ($tablet-width) {
-    top: -110px;
-    padding-top: 110px;
+    margin-top: -110px;
+    padding: 180px 0 70px;
+    background-size: cover;
+    background-position: center top;
   }
   @media ($desktop-width) {
-    top: -110px;
-    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  &--main {
+    position: relative;
+    padding-top: 456px;
+    padding-bottom: 35px;
+    background-image: url(../../img/iphone-hand-mobile@1x.png), url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 175px, center top;
+    @media ($tablet-width) {
+      padding: 110px 0;
+      background-size: 470px, cover;
+      background-position: 65% 241px, center top;
+    }
+    @media ($desktop-width) {
+      padding-top: 110px;
+      padding-bottom: 125px;
+      background-size: 470px, cover;
+      background-position: 65% 360px, center top;
+    }
   }
 
   &__wrapper {
     @include container;
   }
 
-  &--main {
-    background-image: url(../../img/iphone-hand-mobile@1x.png), url("../../img/bg-back-mobile@1x.jpg");
-    min-height: 458px;
-    position: relative;
-    top: -66px;
-    padding-top: 456px;
-    @media ($tablet-width) {
-      min-height: 614px;
-      top: -110px;
-      padding: 110px 0;
-    }
-    @media ($desktop-width) {
-      min-height: 752px;
-      top: -110px;
-      padding: 110px 0;
-    }
-  }
-
   &__heading {
     margin: 0;
-    padding-top: 40px;
-    padding-bottom: 55px;
-    text-align: center;
+    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-weight: normal;
     font-size: 24px;
     line-height: 30px;
+    text-align: center;
     @media ($tablet-width) {
-      padding-top: 85px;
-      padding-bottom: 82px;
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 40px;
+      line-height: 48px;
     }
     @media ($desktop-width) {
-      padding-top: 82px;
-      padding-bottom: 108px;
+      display: block;
+      font-size: 50px;
+      line-height: 60px;
     }
   }
 }

@@ -1,10 +1,11 @@
 .page-header {
+  position: relative;
   @include clearfix;
   outline: 2px solid green;
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 10;
-  background-color: $dark-blue;
+  background-color: rgba(0, 0, 0, 0.3);
   @media ($tablet-width) {
     padding-top: 27px;
     padding-bottom: 42px;
