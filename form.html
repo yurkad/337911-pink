@@ -37,33 +37,37 @@
   </header>
 
   <main class="page-content">
-    <div class="page-content__wrapper">
-      <div class="intro" id="intro">
+    <div class="intro" id="intro">
+      <div class="intro__wrapper">
         <h2 class="intro__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
+    </div>
 
-      <form class="contest-form" action="/echo" method="get">
+    <form class="contest-form" action="/echo" method="get">
+      <div class="contest-form__wrapper">
         <p class="contest-form__descr">
-          Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
         <fieldset class="contest-form__field contest-form__field--name">
-          <p class="contest-form__element">
-            <label class="contest-form__label">Фамилия:
-                  <input class="contest-form__input-field" type="text" name="lastname" placeholder="Укажите фамилию *">
+          <div class="contest-form__name-container">
+            <p class="contest-form__element">
+              <label class="contest-form__label" for="surname-field">Фамилия:
+                <input class="contest-form__input-field" type="text" name="lastname" placeholder="Укажите фамилию *" id="surname-field">
                 </label>
-          </p>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__label">Имя:
-                  <input class="contest-form__input-field" type="text" name="name" placeholder="Введите ваше имя *">
-                </label>
-          </p>
+            <p class="contest-form__element">
+              <label class="contest-form__label" for="name-field">Имя:
+              <input class="contest-form__input-field" type="text" name="name" placeholder="Введите ваше имя *" id="name-field">
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__label">Отчество:
-                  <input class="contest-form__input-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-                </label>
-          </p>
+            <p class="contest-form__element">
+              <label class="contest-form__label" for="patronymic-field">Отчество:
+              <input class="contest-form__input-field" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic-field">
+              </label>
+            </p>
+          </div>
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--achievements">
@@ -71,47 +75,49 @@
             Ваши безбашенные достижения в путешествии
           </legend>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__check" type="checkbox" name="achievement-selfie" checked>
-                  Сделал селфи с акулой
-                </label>
-          </p>
+          <div class="contest-form__achievements-container">
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" name="achievement-selfie" id="achievement-selfie" checked>
+              <label class="contest-form__check-label" for="achievement-selfie">
+                Сделал селфи с акулой
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__check" type="checkbox" name="achievement-sunburn" checked>
-                  Обгорел на пляже
-                </label>
-          </p>
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" name="achievement-sunburn" id="achievement-sunburn" checked>
+              <label class="contest-form__check-label" for="achievement-sunburn">
+                Обгорел на пляже
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__check" type="checkbox" name="achievement-norris">
-                  Видел Чака Норриса
-                </label>
-          </p>
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" name="achievement-norris" id="achievement-norris">
+              <label class="contest-form__check-label" for="achievement-norris">
+                Видел Чака Норриса
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__check" type="checkbox" name="achievement-souvenirs">
-                  Накупил сувениров
-                </label>
-          </p>
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" name="achievement-souvenirs" id="achievement-souvenirs">
+              <label class="contest-form__check-label" for="achievement-souvenirs">
+                Накупил сувениров
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label" for="achievement-tower">
-                  <input class="contest-form__check" type="checkbox" id="achievement-tower" name="achievement-tower" checked>
-                  Удержал башню
-                </label>
-          </p>
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" id="achievement-tower" name="achievement-tower" id="achievement-tower" checked>
+              <label class="contest-form__check-label" for="achievement-tower" for="achievement-tower">
+                Удержал башню
+              </label>
+            </p>
 
-          <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__check" type="checkbox" id="achievement-hotel" name="achievement-hotel">
-                  Разгромил отель
-                </label>
-          </p>
+            <p class="contest-form__element contest-form__element--achievements">
+              <input class="contest-form__check" type="checkbox" id="achievement-hotel" name="achievement-hotel" id="achievement-hotel">
+              <label class="contest-form__check-label" for="achievement-hotel">
+                Разгромил отель
+              </label>
+            </p>
+          </div>
         </fieldset>
 
 
@@ -121,15 +127,17 @@
           </legend>
 
           <p class="contest-form__element contest-form__element--phone">
-            <label class="contest-form__label">Номер телефона
-                  <input class="contest-form__input-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              </label>
+            <label class="contest-form__label">
+              <input class="contest-form__input-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              Номер телефона
+          </label>
           </p>
 
           <p class="contest-form__element contest-form__element--address">
-            <label class="contest-form__label">Адресок почты
-                  <input class="contest-form__input-field" type="email" name="email" placeholder="Введите почту *">
-              </label>
+            <label class="contest-form__label">
+              <input class="contest-form__input-field" type="email" name="email" placeholder="Введите почту *">
+              Адрес почты
+          </label>
           </p>
         </fieldset>
 
@@ -137,60 +145,64 @@
           <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
 
           <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__radio" type="radio" name="app-platform" value="app-ios" checked>
-                  Pink для iOS
-                </label>
+            <input class="contest-form__radio" type="radio" name="app-platform" value="app-ios" id="app-ios" checked>
+            <label class="contest-form__radio-label" for="app-ios">Pink для iOS</label>
           </p>
 
           <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__radio" type="radio" name="app-platform" value="app-android">
-                  Pink на Android
-                </label>
+            <input class="contest-form__radio" type="radio" name="app-platform" value="app-android" id="app-android">
+            <label class="contest-form__radio-label" for="app-android">Pink на Android</label>
           </p>
 
           <p class="contest-form__element">
-            <label class="contest-form__check-label">
-                  <input class="contest-form__radio" type="radio" name="app-platform" value="app-windows">
-                  Windows Phone
-                </label>
+            <input class="contest-form__radio" type="radio" name="app-platform" value="app-windows" id="app-windows">
+            <label class="contest-form__radio-label" for="app-windows">Windows Phone</label>
           </p>
 
         </fieldset>
 
         <fieldset class="contest-form__field contest-form__field--feedback">
           <legend class="contest-form__legend">Опишите свои эмоции</legend>
-          <textarea rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="contest-form__textarea" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="contest-form__submit-block">
           <input class="contest-form__submit" type="submit" value="Отправить форму">
           <p class="contest-form__note"><span class="contest-form__star">*</span> — обязательные поля</p>
         </div>
-      </form>
-
-    </div>
+      </div>
+    </form>
   </main>
 
+
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="http://placehold.it/150x40" alt="Pink" width="150" height="40">
+    <div class="page-footer__links">
+      <div class="page-footer__links-wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+        </div>
 
-      <div class="page-footer__social">
         <ul class="social-links">
-          <li class="social-links__item"><a href="#" class="page-footer__link page-footer__link--tw">Twiter</a></li>
-          <li class="social-links__item"><a href="#" class="page-footer__link page-footer__link--fb">Facebook</a></li>
-          <li class="social-links__item"><a href="#" class="page-footer__link page-footer__link--yt">Youtube</a></li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
+          </li>
         </ul>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
 
-      <div class="page-footer__copyright">
-        <span>Разработано</span>
-        <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
-      </div>
     </div>
   </footer>
+
 
 </body>
 

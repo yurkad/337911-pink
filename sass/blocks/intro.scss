@@ -1,26 +1,18 @@
 .intro {
   margin-top: -72px;
-  padding: 0 20px;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding: 100px 20px 40px;
   background-color: $body-font;
   z-index: -1;
-
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-
   color: #FFFFFF;
-
   @media ($tablet-width) {
     margin-top: -110px;
-    padding: 0;
-    padding-top: 180px;
-    padding-bottom: 70px;
+    padding: 180px 0 70px;
     background-size: cover;
     background-position: center top;
   }
-
   @media ($desktop-width) {
     padding-bottom: 90px;
   }
@@ -29,21 +21,17 @@
     position: relative;
     padding-top: 456px;
     padding-bottom: 35px;
-    background-image: url(../../img/iphone-hand-mobile@1x.png), url(../../img/bg-back-mobile@1x.jpg);
+    background-image: url(../../img/iphone-hand-mobile@1x.png), url("../../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center 175px, center top;
-
     @media ($tablet-width) {
       padding: 110px 0;
-
       background-size: 470px, cover;
       background-position: 65% 241px, center top;
     }
-
     @media ($desktop-width) {
       padding-top: 110px;
       padding-bottom: 125px;
-
       background-size: 470px, cover;
       background-position: 65% 360px, center top;
     }
@@ -60,12 +48,10 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @media ($tablet-width) {
       font-size: 40px;
       line-height: 48px;
     }
-
     @media ($desktop-width) {
       display: block;
       font-size: 50px;

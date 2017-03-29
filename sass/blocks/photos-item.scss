@@ -1,29 +1,23 @@
 .photos-item {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   width: 280px;
   font-size: 0;
   line-height: 0;
-
   @media ($tablet-width) {
     outline: 1px solid blue;
     display: inline-block;
     vertical-align: top;
     min-width: 300px;
     min-height: 455px;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin: 0 20px 20px 0;
     flex-grow: 1;
 
     &:nth-child(2n) {
       outline: 1px dotted pink;
       margin-right: 0;
     }
-
   }
-
   @media ($desktop-width) {
     min-height: 555px;
     margin-right: 20px;
@@ -45,7 +39,6 @@
     margin-right: 0;
     font-size: 0;
     line-height: 0;
-
     @media ($tablet-width) {
       display: block;
       width: auto;
@@ -54,13 +47,12 @@
       display: block;
       width: auto;
     }
-
   }
+
   &__photo {
     width: 280px;
     height: 180px;
     margin: 0 auto;
-
     @media ($tablet-width) {
       width: 100%;
       height: auto;
@@ -76,14 +68,10 @@
     width: auto;
     height: auto;
     margin: 0;
-
     @media ($tablet-width) {
       display: block;
     }
-
-    @media ($desktop-width) {
-
-    }
+    @media ($desktop-width) {}
   }
 
   &__image {
@@ -98,7 +86,6 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
-
     @media ($tablet-width) {
       order: 0;
     }
@@ -126,7 +113,6 @@
       top: 0;
       right: -5px;
     }
-
     @media ($tablet-width) {
       order: 1;
     }
@@ -137,7 +123,6 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-
     @media ($tablet-width) {
       order: 3;
     }
@@ -146,7 +131,6 @@
   &__likes {
     position: relative;
     margin-left: 32px;
-
     font-family: 'Open Sans','Arial', sans-serif;
     font-weight: normal;
     font-size: 12px;
@@ -161,16 +145,13 @@
       height: 13px;
       top: 5px;
       left: -32px;
-
-      background-image: url(../../img/icon-heart.svg);
+      background-image: url("../../img/icon-heart.svg");
       background-repeat: no-repeat;
       background-size: cover;
-
-      @media ($tablet-width){
+      @media ($tablet-width) {
         left: 95%;
       }
     }
-
     @media ($tablet-width) {
       order: 2;
       margin-left: auto;
@@ -179,6 +160,7 @@
 
     &--panorama {
       margin-top: 0;
+
       &::before {
         top: 5px;
         left: -32px;
@@ -190,7 +172,6 @@
     @include no-list;
     background-color: $light-grey;
     padding: 15px 25px;
-
     @media ($tablet-width) {
       padding: 25px 30px;
     }
