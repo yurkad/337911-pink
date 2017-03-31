@@ -12,6 +12,16 @@
 
   &__wrapper {
     @include container;
+    display: flex;
+    flex-direction: column;
+    @media ($tablet-width) {
+      display: flex;
+      flex-direction: row;
+    }
+    @media ($desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__image {
@@ -36,20 +46,30 @@
     font-size: 0;
     @media ($tablet-width) {
       width: 46px;
-      float: left;
-      margin-bottom: 100px;
+
+    }
+  }
+
+  &__inputs {
+    outline: 1px dashed green;
+    width: 281px;
+    @media ($tablet-width) {
+
+    }
+    @media ($desktop-width) {
+
     }
   }
 
   &__tools {
     outline: 1px dashed green;
-    display: block;
     @media ($tablet-width) {
-      float: right;
-      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
     }
     @media ($desktop-width) {
-      float: right;
+
     }
   }
 
@@ -102,8 +122,9 @@
       width: 280px;
     }
     @media ($tablet-width) {
-      display: block;
-      width: 180px;
+      display: inline-block;
+
+      width: 280px;
       margin-top: 20px;
     }
   }
