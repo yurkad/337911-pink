@@ -1,8 +1,10 @@
 .page-footer {
   padding-top: 37px;
+
   @media ($tablet-width) {
     padding-top: 0;
   }
+
   @media ($desktop-width) {
     padding-top: 0;
   }
@@ -17,6 +19,7 @@
 
     &-wrapper {
       @include container;
+
       @media ($tablet-width) {
         display: flex;
         justify-content: space-between;
@@ -65,7 +68,7 @@
 
   &__copyright-text {
     @media ($tablet-width) {
-      font-family: 'Open Sans','Arial', sans-serif;
+      font-family: 'Open Sans', 'Arial', sans-serif;
       font-weight: normal;
       font-size: 14px;
       line-height: 18px;

@@ -7,6 +7,12 @@
   background-position: center 114%;
   background-size: 200px auto;
 
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../../img/iphone-screen-mobile@2x.png");
+  }
+
   @media ($tablet-width) {
     padding-bottom: 0;
     background-image: none;
@@ -39,9 +45,15 @@
         width: 267px;
         height: 485px;
 
-        background-image: url("../../img/iphone-screen-mobile@1x.png");
+        background-image: url("../../img/iphone-screen-tablet-3@1x.png");
         background-repeat: no-repeat;
         background-size: 100%;
+
+        @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url("../../img/iphone-screen-tablet-3@2x.png");
+        }
       }
     }
     @media ($desktop-width) {
@@ -73,9 +85,9 @@
       &::before {
         content: "";
         position: absolute;
-        left: 65px;
+        left: 10px;
         bottom: 320px;
-        width: 186px;
+        width: 300px;
         height: 300px;
         z-index: 10;
 
@@ -87,14 +99,30 @@
     &:nth-child(1) {
       @media ($desktop-width) {
         &::before {
-          background-image: url("../../img/iphone-screen-mobile@1x.png");
+          background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+          background-position: center bottom;
+          background-size: contain;
+
+          @media
+          (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+            background-image: url("../../img/iphone-screen-1-desktop@2x.png");
+          }
         }
       }
     }
     &:nth-child(2) {
       @media ($desktop-width) {
         &::before {
-          background-image: url("../../img/iphone-screen-mobile@1x.png");
+          background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+          background-position: center bottom;
+          background-size: contain;
+
+          @media
+          (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+            background-image: url("../../img/iphone-screen-2-desktop@2x.png");
+          }
         }
       }
     }
@@ -110,7 +138,15 @@
         margin-bottom: 0;
 
         &::before {
-          background-image: url("../../img/iphone-screen-mobile@1x.png");
+          background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+          background-position: center bottom;
+          background-size: contain;
+
+          @media
+          (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+            background-image: url("../../img/iphone-screen-3-desktop@2x.png");
+          }
         }
       }
     }
@@ -118,7 +154,7 @@
 
 
   &__name {
-    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-family: 'Open Sans Bold', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -135,7 +171,7 @@
   }
 
   &__descr {
-    font-family: 'Open Sans','Arial', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -151,7 +187,7 @@
   padding-top: 50px;
   padding-bottom: 29px;
 
-  font-family: 'Open Sans Light','Arial', sans-serif;
+  font-family: 'Open Sans Light', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
@@ -168,6 +204,26 @@
     padding-bottom: 104px;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 70px;
+
+    background-image: linear-gradient(
+        to top left,
+        $light-grey  50%,
+        transparent  50%
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
   }
 
   &__line {
@@ -212,11 +268,41 @@
 
     @media ($desktop-width) {
       padding-left: 370px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 301px;
+        height: 345px;
+        left: 0;
+        top: -100px;
+
+        background-image: url("../../img/icon-timer.svg");
+        background-repeat: no-repeat;
+      }
+      &::after {
+        content: '24';
+        position: absolute;
+        width: 221px;
+        height: 221px;
+        left: 19px;
+        top: -34px;
+
+        border-radius: 50%;
+        border: 19px solid $pink;
+
+        font-family: 'Open Sans Bold', 'Arial', sans-serif;
+        font-size: 120px;
+        color: $pink;
+        line-height: 200px;
+        text-align: center;
+      }
     }
   }
 
   &__heading {
-    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-family: 'Open Sans Bold', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;

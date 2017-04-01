@@ -1,17 +1,13 @@
 .user-interface {
-  @include clearfix;
-  min-height: 760px;
-  padding-top: 20px;
   background-color: $light-grey;
-  @media ($tablet-width) {
-    min-height: 510px;
-  }
+
   @media ($desktop-width) {
-    min-height: 510px;
+    background-color: white;
   }
 
   &__wrapper {
     @include container;
+    @include clearfix;
     display: flex;
     flex-direction: column;
     @media ($tablet-width) {
@@ -21,6 +17,12 @@
     @media ($desktop-width) {
       display: flex;
       flex-direction: row;
+      box-sizing: border-box;
+      padding-left: 80px;
+      padding-right: 60px;
+      padding-top: 55px;
+      padding-bottom: 50px;
+      background-color: $light-grey;
     }
   }
 

@@ -15,7 +15,7 @@
     margin-bottom: 30px;
     padding: 18px 33px;
 
-    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-family: 'Open Sans Bold', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
@@ -68,15 +68,15 @@
     font-size: 0;
 
     &--apple {
-      background: url(../../img/logo-apple.svg) no-repeat 50% 50%;
+      background: url("../../img/logo-apple.svg") no-repeat 50% 50%;
     }
 
     &--android {
-      background: url(../../img/logo-android.svg) no-repeat 50% 50%;
+      background: url("../../img/logo-android.svg") no-repeat 50% 50%;
     }
 
     &--windows {
-      background: url(../../img/logo-microsoft.svg) no-repeat 50% 50%;
+      background: url("../../img/logo-microsoft.svg") no-repeat 50% 50%;
     }
   }
 
@@ -90,7 +90,7 @@
       margin-top: 105px;
       margin-bottom: 30px;
 
-      font-family: 'Open Sans Light','Arial', sans-serif;
+      font-family: 'Open Sans Light', 'Arial', sans-serif;
       font-weight: normal;
       font-size: 40px;
       line-height: 48px;
@@ -110,7 +110,7 @@
   &__descr {
     margin: 0;
 
-    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-family: 'Open Sans Light', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;

@@ -2,6 +2,7 @@
   @include no-list;
   width: 175px;
   font-size: 0;
+
   @media ($mobile-width-only) {
     margin: 0 auto 35px;
   }

@@ -1,23 +1,29 @@
 .photos-item {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   width: 280px;
   font-size: 0;
   line-height: 0;
+
+  background-color: $light-grey;
+
   @media ($tablet-width) {
-    outline: 1px solid blue;
     display: inline-block;
     vertical-align: top;
     min-width: 300px;
+    max-width: 450px;
     min-height: 455px;
-    margin: 0 20px 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
     flex-grow: 1;
 
     &:nth-child(2n) {
-      outline: 1px dotted pink;
       margin-right: 0;
     }
   }
+
   @media ($desktop-width) {
     min-height: 555px;
     margin-right: 20px;
@@ -27,7 +33,6 @@
     }
 
     &:nth-child(3n) {
-      outline: 2px solid orange;
       margin-right: 0;
     }
   }
@@ -39,10 +44,12 @@
     margin-right: 0;
     font-size: 0;
     line-height: 0;
+
     @media ($tablet-width) {
       display: block;
       width: auto;
     }
+
     @media ($desktop-width) {
       display: block;
       width: auto;
@@ -53,6 +60,7 @@
     width: 280px;
     height: 180px;
     margin: 0 auto;
+
     @media ($tablet-width) {
       width: 100%;
       height: auto;
@@ -68,9 +76,11 @@
     width: auto;
     height: auto;
     margin: 0;
+
     @media ($tablet-width) {
       display: block;
     }
+
     @media ($desktop-width) {}
   }
 
@@ -82,10 +92,11 @@
   &__author {
     display: inline-block;
     margin-right: 10px;
-    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-family: 'Open Sans Bold', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
+
     @media ($tablet-width) {
       order: 0;
     }
@@ -94,7 +105,7 @@
   &__time {
     position: relative;
     display: inline-block;
-    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-family: 'Open Sans Light', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
@@ -113,25 +124,28 @@
       top: 0;
       right: -5px;
     }
+
     @media ($tablet-width) {
       order: 1;
     }
   }
 
   &__comment {
-    font-family: 'Open Sans','Arial', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
     @media ($tablet-width) {
       order: 3;
+      min-height: 60px;
     }
   }
 
   &__likes {
     position: relative;
     margin-left: 32px;
-    font-family: 'Open Sans','Arial', sans-serif;
+
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
@@ -145,13 +159,16 @@
       height: 13px;
       top: 5px;
       left: -32px;
+
       background-image: url("../../img/icon-heart.svg");
       background-repeat: no-repeat;
       background-size: cover;
+
       @media ($tablet-width) {
         left: 95%;
       }
     }
+
     @media ($tablet-width) {
       order: 2;
       margin-left: auto;
@@ -172,6 +189,7 @@
     @include no-list;
     background-color: $light-grey;
     padding: 15px 25px;
+
     @media ($tablet-width) {
       padding: 25px 30px;
     }

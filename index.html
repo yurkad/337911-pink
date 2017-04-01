@@ -15,8 +15,9 @@
       <h1 class="page-header__logo">Pink</h1>
 
       <nav class="main-nav">
-        <span class="main-nav__toggle main-nav__toggle--opened">Открыть меню</span>
+        <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
 
+ <div class="main-nav__wrapper main-nav__wrapper--closed">
         <ul class="main-nav__items">
           <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
@@ -31,6 +32,7 @@
             <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
           </li>
         </ul>
+      </div>
 
       </nav>
     </div>
@@ -80,7 +82,7 @@
         </ul>
 
         <div class="features__effect">
-          <div class="effect__content">
+          <div class="features__effect__content">
             <h3 class="features__effect__heading">Эффект на 24 часа!</h3>
             <p class="features__effect__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#" class="features__effect__link">Узнать больше об исследовании</a>
@@ -89,90 +91,92 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__wrapper">
-        <input type="radio" id="review-toggle-1" name="review-toggle" checked>
-        <input type="radio" id="review-toggle-2" name="review-toggle">
-        <input type="radio" id="review-toggle-2" name="review-toggle">
+        <input class="reviews__input" type="radio" id="review-toggle-1" name="review-toggle" checked>
+        <input class="reviews__input" type="radio" id="review-toggle-2" name="review-toggle">
+        <input class="reviews__input" type="radio" id="review-toggle-3" name="review-toggle">
 
         <div class="review__controls">
-          <label for="review-toggle-1"></label>
-          <label for="review-toggle-2"></label>
-          <label for="review-toggle-3"></label>
+          <label class="reviews__label" for="review-toggle-1"></label>
+          <label class="reviews__label" for="review-toggle-2"></label>
+          <label class="reviews__label" for="review-toggle-3"></label>
         </div>
 
-        <div class="review">
-          <h3 class="review__author">Николай Петров</h3>
-          <blockquote class="review__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-          </blockquote>
+        <div class="reviews__inner">
+
+                  <div class="reviews__items">
+                    <div class="reviews__item">
+                      <cite class="reviews__author">Николай Петров</cite>
+                      <span class="reviews__author-description">25 лет, водитель трамвая</span>
+                      <blockquote class="reviews__quote">
+                        Это приложение перевернуло мой мир и позволило по-новому
+                        взглянуть на привычные серые вещи! А еще я познакомился
+                        со своей будущей женой в комментариях к выложенной фотографии!
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+
         </div>
-      </div>
     </section>
 
     <section class="price">
       <div class="price__wrapper">
-        <input type="radio" id="price-toggle-1" name="price-toggle">
-        <input type="radio" id="price-toggle-2" name="price-toggle" checked>
-        <input type="radio" id="price-toggle-3" name="price-toggle">
+        <input class="price__input" type="radio" id="price-toggle-1" name="price-toggle">
+        <input class="price__input" type="radio" id="price-toggle-2" name="price-toggle" checked>
+        <input class="price__input" type="radio" id="price-toggle-3" name="price-toggle">
 
         <div class="price__controls">
-          <label for="price-toggle-1"></label>
-          <label for="price-toggle-2"></label>
-          <label for="price-toggle-3"></label>
+          <label class="price__label" for="price-toggle-1"></label>
+          <label class="price__label" for="price-toggle-2"></label>
+          <label class="price__label" for="price-toggle-3"></label>
         </div>
 
         <div class="price__slider">
           <table class="price-table">
             <thead>
               <tr>
-                <th class="price-table__tariff" colspan="2">
-                  <span>База</span>
-                  <span>1,99 USD</span>
-                </th>
-                <th class="price-table__tariff" colspan="2">
-                  <span>Стандарт</span>
-                  <span>3,99 USD</span>
-                </th>
-                <th class="price-table__tariff" colspan="2">
-                  <span>Анлим</span>
-                  <span>9,99 USD</span>
-                </th>
+                <th class="price-table__header price-table__header--empty"></th>
+                <th class="price-table__header price-table__header--tariff">База</th>
+                <th class="price-table__header price-table__header--tariff price-table__header--hit">Стандарт</th>
+                <th class="price-table__header price-table__header--tariff">Анлим</th>
               </tr>
-            </thead>
+              <tr>
+                <th class="price-table__header price-table__header--empty"></th>
+                <th class="price-table__header price-table__header--price">1,99 USD</th>
+                <th class="price-table__header price-table__header--price">3,99 USD</th>
+                <th class="price-table__header price-table__header--price">9,99 USD</th>
+              </tr>
+</thead>
 
             <tbody>
-              <tr>
-                <td class="price-table__feature">Розовый фильтр</td>
-                <td class="price-table__check price-table__check--yes">да</td>
+                          <tr>
+                            <td class="price-table__cell price-table__cell--feature">Розовый фильтр</td>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Розовый фильтр">да</td>
 
-                <td class="price-table__feature">Розовый фильтр</td>
-                <td class="price-table__check price-table__check--yes">да</td>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Розовый фильтр">да</td>
 
-                <td class="price-table__feature">Розовый фильтр</td>
-                <td class="price-table__check price-table__check--yes">да</td>
-              </tr>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Розовый фильтр">да</td>
+                          </tr>
 
-              <tr>
-                <td class="price-table__feature">Смайлики</td>
-                <td class="price-table__check price-table__check--no">нет</td>
+                          <tr>
+                            <td class="price-table__cell price-table__cell--feature">Смайлики</td>
+                            <td class="price-table__cell price-table__cell--no price-table__cell--filter" data-header="Смайлики">нет</td>
 
-                <td class="price-table__feature">Смайлики</td>
-                <td class="price-table__check price-table__check--yes">да</td>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Смайлики">да</td>
 
-                <td class="price-table__feature">Смайлики</td>
-                <td class="price-table__check price-table__check--yes">да</td>
-              </tr>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Смайлики">да</td>
+                          </tr>
 
-              <tr>
-                <td class="price-table__feature">Комментарии</td>
-                <td class="price-table__check price-table__check--no">нет</td>
+                          <tr>
+                            <td class="price-table__cell price-table__cell--feature">Комментарии</td>
+                            <td class="price-table__cell price-table__cell--no price-table__cell--filter" data-header="Комментарии">нет</td>
 
-                <td class="price-table__feature">Комментарии</td>
-                <td class="price-table__check price-table__check--no">нет</td>
+                            <td class="price-table__cell price-table__cell--no price-table__cell--filter" data-header="Комментарии">нет</td>
 
-                <td class="price-table__feature">Комментарии</td>
-                <td class="price-table__check price-table__check--no">да</td>
-              </tr>
+                            <td class="price-table__cell price-table__cell--yes price-table__cell--filter" data-header="Комментарии">да</td>
+                          </tr>
             </tbody>
           </table>
         </div>
