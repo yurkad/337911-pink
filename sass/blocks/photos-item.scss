@@ -1,11 +1,9 @@
 .photos-item {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   width: 280px;
   font-size: 0;
   line-height: 0;
-
   background-color: $light-grey;
 
   @media ($tablet-width) {
@@ -14,9 +12,7 @@
     min-width: 300px;
     max-width: 450px;
     min-height: 455px;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin: 0 20px 20px 0;
     flex-grow: 1;
 
     &:nth-child(2n) {
@@ -66,7 +62,7 @@
       height: auto;
     }
 
-    & img {
+    &__img {
       width: 100%;
       height: auto;
     }
@@ -92,7 +88,7 @@
   &__author {
     display: inline-block;
     margin-right: 10px;
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
@@ -105,7 +101,7 @@
   &__time {
     position: relative;
     display: inline-block;
-    font-family: 'Open Sans Light', 'Arial', sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
@@ -118,7 +114,7 @@
       left: -5px;
     }
 
-    &:after {
+    &::after {
       position: absolute;
       content: ')';
       top: 0;
@@ -131,10 +127,11 @@
   }
 
   &__comment {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
+
     @media ($tablet-width) {
       order: 3;
       min-height: 60px;
@@ -144,8 +141,7 @@
   &__likes {
     position: relative;
     margin-left: 32px;
-
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
@@ -159,7 +155,6 @@
       height: 13px;
       top: 5px;
       left: -32px;
-
       background-image: url("../../img/icon-heart.svg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -187,6 +182,7 @@
 
   &__descr {
     @include no-list;
+
     background-color: $light-grey;
     padding: 15px 25px;
 
@@ -195,6 +191,7 @@
     }
 
     &--panorama {
+
       @media ($tablet-width) {
         display: flex;
         flex-direction: row;

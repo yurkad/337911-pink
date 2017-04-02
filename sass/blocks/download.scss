@@ -15,7 +15,7 @@
     margin-bottom: 30px;
     padding: 18px 33px;
 
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
@@ -86,11 +86,8 @@
 
     @media ($tablet-width) {
       display: block;
-      margin: 0 40px;
-      margin-top: 105px;
-      margin-bottom: 30px;
-
-      font-family: 'Open Sans Light', 'Arial', sans-serif;
+      margin: 105px 40px 30px;
+      font-family: "Open Sans Light", "Arial", sans-serif;
       font-weight: normal;
       font-size: 40px;
       line-height: 48px;
@@ -110,7 +107,7 @@
   &__descr {
     margin: 0;
 
-    font-family: 'Open Sans Light', 'Arial', sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;

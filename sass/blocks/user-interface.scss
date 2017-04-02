@@ -8,20 +8,20 @@
   &__wrapper {
     @include container;
     @include clearfix;
+
     display: flex;
     flex-direction: column;
+
     @media ($tablet-width) {
       display: flex;
       flex-direction: row;
     }
+
     @media ($desktop-width) {
       display: flex;
       flex-direction: row;
       box-sizing: border-box;
-      padding-left: 80px;
-      padding-right: 60px;
-      padding-top: 55px;
-      padding-bottom: 50px;
+      padding: 55px 60px 50px 80px;
       background-color: $light-grey;
     }
   }
@@ -32,9 +32,11 @@
     margin: 0 auto 38px;
     font-size: 0;
     line-height: 0;
+
     @media ($tablet-width) {
       float: left;
     }
+
     @media ($desktop-width) {
       float: left;
     }
@@ -46,21 +48,18 @@
     width: 215px;
     margin: 0 auto 38px;
     font-size: 0;
+
     @media ($tablet-width) {
       width: 46px;
-
     }
   }
 
   &__inputs {
     outline: 1px dashed green;
     width: 281px;
-    @media ($tablet-width) {
 
-    }
-    @media ($desktop-width) {
-
-    }
+    @media ($tablet-width) {}
+    @media ($desktop-width) {}
   }
 
   &__tools {
@@ -70,9 +69,8 @@
       flex-wrap: wrap;
       width: 50%;
     }
-    @media ($desktop-width) {
 
-    }
+    @media ($desktop-width) {}
   }
 
   &__icon {
@@ -86,10 +84,12 @@
     &:last-child {
       margin-right: 0;
     }
+
     @media ($tablet-width) {
       display: block;
       margin-bottom: 25px;
     }
+
     @media ($desktop-width) {
       display: block;
     }
@@ -123,9 +123,9 @@
       display: block;
       width: 280px;
     }
+
     @media ($tablet-width) {
       display: inline-block;
-
       width: 280px;
       margin-top: 20px;
     }
@@ -150,6 +150,7 @@
     font-weight: bold;
     text-align: center;
     color: $pink;
+
     @media ($desktop-width) {
       display: inline-block;
       width: 180px;

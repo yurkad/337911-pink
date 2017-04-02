@@ -1,15 +1,12 @@
 .features {
-  background-color: $light-grey;
-  padding: 0 20px;
-  padding-bottom: 80px;
+  background-color: #ffffff;
+  padding: 0 20px 80px;
   background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 114%;
   background-size: 200px auto;
 
-  @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../../img/iphone-screen-mobile@2x.png");
   }
 
@@ -31,6 +28,7 @@
     padding-top: 56px;
     list-style: none;
     position: relative;
+    background-color: $light-grey;
 
     @media ($tablet-width) {
       padding-left: 310px;
@@ -44,18 +42,15 @@
         z-index: 10;
         width: 267px;
         height: 485px;
-
-        background-image: url("../../img/iphone-screen-tablet-3@1x.png");
+        background-image: url("../../img/iphone-screen-3-tablet@1x.png");
         background-repeat: no-repeat;
         background-size: 100%;
-
-        @media
-        (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-          background-image: url("../../img/iphone-screen-tablet-3@2x.png");
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../../img/iphone-screen-3-tablet@2x.png");
         }
       }
     }
+
     @media ($desktop-width) {
       &::before {
         content: none;
@@ -79,8 +74,7 @@
       width: 320px;
       text-align: center;
       display: table-cell;
-      padding: 0 30px;
-      padding-top: 260px;
+      padding: 260px 30px 0;
 
       &::before {
         content: "";
@@ -90,50 +84,44 @@
         width: 300px;
         height: 300px;
         z-index: 10;
-
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100%;
       }
     }
+
     &:nth-child(1) {
       @media ($desktop-width) {
         &::before {
           background-image: url("../../img/iphone-screen-1-desktop@1x.png");
           background-position: center bottom;
           background-size: contain;
-
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+          @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             background-image: url("../../img/iphone-screen-1-desktop@2x.png");
           }
         }
       }
     }
+
     &:nth-child(2) {
       @media ($desktop-width) {
         &::before {
           background-image: url("../../img/iphone-screen-2-desktop@1x.png");
           background-position: center bottom;
           background-size: contain;
-
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+          @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             background-image: url("../../img/iphone-screen-2-desktop@2x.png");
           }
         }
       }
     }
+
     &:nth-child(3) {
       margin-bottom: 320px;
-
       @media ($tablet-width) {
         margin-bottom: 0;
         padding-bottom: 45px;
       }
-
       @media ($desktop-width) {
         margin-bottom: 0;
 
@@ -141,10 +129,7 @@
           background-image: url("../../img/iphone-screen-3-desktop@1x.png");
           background-position: center bottom;
           background-size: contain;
-
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+          @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             background-image: url("../../img/iphone-screen-3-desktop@2x.png");
           }
         }
@@ -152,9 +137,8 @@
     }
   }
 
-
   &__name {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -171,7 +155,7 @@
   }
 
   &__descr {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -183,145 +167,135 @@
   }
 
   &__slogan {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 29px;
-
-  font-family: 'Open Sans Light', 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-
-  @media ($tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 85px;
-    font-size: 40px;
-    line-height: 48px;
-  }
-  @media ($desktop-width) {
-    padding-top: 85px;
-    padding-bottom: 104px;
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    z-index: 10;
-
-    width: 100%;
-    height: 70px;
-
-    background-image: linear-gradient(
-        to top left,
-        $light-grey  50%,
-        transparent  50%
-    );
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0, 100% 0;
-  }
-
-  &__line {
-    margin: 0;
-    margin-bottom: 40px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 29px;
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
 
     @media ($tablet-width) {
-      margin-bottom: 0;
-      &--second {
-        padding: 0 50px;
-      }
+      padding-top: 65px;
+      padding-bottom: 85px;
+      font-size: 40px;
+      line-height: 48px;
     }
 
     @media ($desktop-width) {
-      &--second {
-        padding: 0 150px;
+      padding-top: 85px;
+      padding-bottom: 104px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 50px;
+      background-image: linear-gradient( to top left, $light-grey 50%, transparent 50% );
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0, 100% 0;
+    }
+
+    &__line {
+      margin: 0 0 40px;
+
+      @media ($tablet-width) {
+        margin-bottom: 0;
+
+        &--second {
+          padding: 0 50px;
+        }
+      }
+
+      @media ($desktop-width) {
+        &--second {
+          padding: 0 150px;
+        }
       }
     }
   }
-}
 
-&__effect {
-  display: none;
+  &__effect {
+    display: none;
 
-  @media ($tablet-width) {
-    display: block;
-    padding-top: 80px;
-    padding-bottom: 70px;
-
-    background-color: #FFFFFF;
-  }
-
-  @media ($desktop-width) {
-    padding-top: 128px;
-    padding-bottom: 118px;
-
-    background-color: $light-grey;
-  }
-
-  &__content {
-    padding-left: 310px;
+    @media ($tablet-width) {
+      display: block;
+      padding-top: 80px;
+      padding-bottom: 70px;
+      background-color: #FFFFFF;
+    }
 
     @media ($desktop-width) {
-      padding-left: 370px;
-      position: relative;
+      padding-top: 128px;
+      padding-bottom: 118px;
+      background-color: $light-grey;
+    }
 
-      &::before {
-        content: '';
-        position: absolute;
-        width: 301px;
-        height: 345px;
-        left: 0;
-        top: -100px;
+    &__content {
+      padding-left: 310px;
 
-        background-image: url("../../img/icon-timer.svg");
-        background-repeat: no-repeat;
-      }
-      &::after {
-        content: '24';
-        position: absolute;
-        width: 221px;
-        height: 221px;
-        left: 19px;
-        top: -34px;
+      @media ($tablet-width) {
+        padding-left: 370px;
+        position: relative;
 
-        border-radius: 50%;
-        border: 19px solid $pink;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 301px;
+          height: 345px;
+          left: 0;
+          top: -100px;
+          background-image: url("../../img/icon-timer.svg");
+          background-repeat: no-repeat;
+        }
 
-        font-family: 'Open Sans Bold', 'Arial', sans-serif;
-        font-size: 120px;
-        color: $pink;
-        line-height: 200px;
-        text-align: center;
+        &::after {
+          content: '24';
+          position: absolute;
+          width: 221px;
+          height: 221px;
+          left: 19px;
+          top: -34px;
+          border-radius: 50%;
+          border: 19px solid $pink;
+          font-family: "Open Sans Bold", "Arial", sans-serif;
+          font-size: 120px;
+          color: $pink;
+          line-height: 200px;
+          text-align: center;
+        }
       }
     }
-  }
 
-  &__heading {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-  }
+    &__heading {
+      font-family: "Open Sans Bold", "Arial", sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+    }
 
-  &__descr {
-    font-family: 'Open Sans','Arial', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    &__descr {
+      font-family: 'Open Sans','Arial', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
 
-    @media ($desktop-width) {
-      font-size: 18px;
-      line-height: 30px;
+      @media ($desktop-width) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    &__link {
+      color: $pink;
     }
   }
-
-  &__link {
-    color: $pink;
-  }
-}
 }

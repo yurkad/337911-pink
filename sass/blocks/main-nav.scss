@@ -13,7 +13,6 @@
       top: -72px;
       width: 100%;
       z-index: 9;
-
       padding-top: 78px;
       background-color: #283645;
 
@@ -30,17 +29,15 @@
       position: absolute;
       top: 25px;
       left: 20px;
-
       width: 76px;
       height: 24px;
-
-      background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
+      background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
 
       @media ($tablet-width) {
         left: 10.5%;
         width: 150px;
         height: 42px;
-        background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
+        background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
       }
 
       @media ($desktop-width) {
@@ -65,14 +62,12 @@
     top: -47px;
     right: 20px;
     z-index: 10;
-
     display: block;
     width: 50px;
     height: 25px;
-
     font-size: 0;
     cursor: pointer;
-    background: url(../../img/icon-menu-burger.svg) no-repeat;
+    background: url("../../img/icon-menu-burger.svg") no-repeat;
 
     @media ($tablet-width) {
       top: -72px;
@@ -87,7 +82,7 @@
     right: 20px;
     width: 27px;
     height: 27px;
-    background-image: url(../../img/icon-menu-cross.svg);
+    background-image: url("../../img/icon-menu-cross.svg");
     background-repeat: no-repeat;
 
     @media ($tablet-width) {
@@ -105,25 +100,28 @@
 
   &__item {
     padding: 23px;
-
     font-family: 'Open Sans','Arial', sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
-
-    box-shadow: inset 0 2px 0 0 #000101,
-    inset 0 4px 0 0 #485461;
+    box-shadow: inset 0 2px 0 0 #000101, inset 0 4px 0 0 #485461;
 
     @media ($desktop-width) {
       border: none;
       box-shadow: none;
       line-height: 18px;
     }
+
+    &--active {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
   }
 
   &__item:last-child {
     border-bottom: 2px solid #000101;
+
     @media ($desktop-width) {
       border: none;
     }

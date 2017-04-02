@@ -7,15 +7,10 @@
     bottom: 0;
     left: 0;
     z-index: 10;
-
     width: 100%;
     height: 60px;
 
-    background-image: linear-gradient(
-        to top left,
-        $light-grey  50%,
-        transparent  50%
-    );
+    background-image: linear-gradient( to top left, $light-grey 50%, transparent 50% );
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
@@ -60,7 +55,6 @@
     background-color: $middle-grey;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color .2s;
   }
 
   &__item {
@@ -87,17 +81,15 @@
         position: absolute;
         top: 74px;
         left: 47%;
-
         width: 78px;
         height: 64px;
-
         background-image: url("../../img/icon-quotes.svg");
       }
     }
   }
 
   &__author {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -134,9 +126,6 @@
     font-size: 14px;
     line-height: 30px;
     font-weight: normal;
-
     margin: 0;
   }
-
-
 }

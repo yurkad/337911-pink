@@ -7,10 +7,12 @@
 
   &__wrapper {
     @include container;
+
     @media ($tablet-width) {
       display: flex;
       flex-direction: column;
     }
+
     @media ($desktop-width) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -22,15 +24,17 @@
     border: 0;
     margin: 0;
     display: block;
+
     @media ($mobile-width-only) {
-  @include container;
-}
+       @include container;
+    }
 
     @media ($tablet-width) {
       padding: 52px 55px;
       border: 2px solid $middle-grey;
       margin-bottom: 55px;
     }
+
     @media ($desktop-width) {
       flex-basis: 100%;
       margin-bottom: 55px;
@@ -38,11 +42,13 @@
 
     &--name {
       padding-bottom: 40px;
+
       @media ($tablet-width) {
         order: 1;
         padding: 0;
         border: 0;
       }
+
       @media ($desktop-width) {
         flex-basis: 46%;
         box-sizing: border-box;
@@ -54,9 +60,11 @@
     &--achievements {
       padding-top: 35px;
       padding-bottom: 45px;
+
       @media ($mobile-width-only) {
         background-color: $light-grey;
       }
+
       @media ($tablet-width) {
         order: 4;
       }
@@ -64,22 +72,27 @@
 
     &--contacts {
       padding-bottom: 50px;
+
       @media ($tablet-width) {
         order: 3;
       }
+
       @media ($desktop-width) {
-        @include clearfix;
+         @include clearfix;
       }
     }
 
     &--app {
       padding-bottom: 40px;
+
       @media ($mobile-width-only) {
         background-color: $light-grey;
       }
+
       @media ($tablet-width) {
         order: 2;
       }
+
       @media ($desktop-width) {
         flex-basis: 46%;
         box-sizing: border-box;
@@ -88,6 +101,7 @@
 
     &--feedback {
       padding-bottom: 45px;
+
       @media ($tablet-width) {
         order: 5;
       }
@@ -111,49 +125,47 @@
     }
   }
 
-  &__element {}
-
   &__element--achievements {
     margin-left: 70px;
     margin-bottom: 50px;
+
     @media ($desktop-width) {
       flex-basis: 20%;
     }
   }
 
-  &__element--achievements:nth-child(2){
+  &__element--achievements:nth-child(2) {
     @media ($desktop-width) {
       order: 3;
     }
   }
 
-  &__element--achievements:nth-child(3){
+  &__element--achievements:nth-child(3) {
     @media ($desktop-width) {
       order: 1;
     }
   }
 
-  &__element--achievements:nth-child(5){
+  &__element--achievements:nth-child(5) {
     @media ($desktop-width) {
       order: 2;
     }
   }
 
-  &__element--achievements:nth-child(4){
+  &__element--achievements:nth-child(4) {
     @media ($desktop-width) {
       order: 5;
     }
   }
 
-  &__element--achievements:nth-child(6){
+  &__element--achievements:nth-child(6) {
     @media ($desktop-width) {
       order: 6;
     }
   }
 
-
   &__descr {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -163,12 +175,14 @@
       margin: 0;
       padding-bottom: 50px;
     }
+
     @media ($tablet-width) {
       padding-bottom: 80px;
       font-size: 18px;
       line-height: 30px;
       order: 0;
     }
+
     @media ($desktop-width) {
       padding-bottom: 85px;
     }
@@ -179,7 +193,8 @@
     margin-left: 23px;
     margin-right: 23px;
     margin-bottom: 5px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
+
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -195,7 +210,8 @@
     box-sizing: border-box;
     border: 2px solid $middle-grey;
     padding: 13px 22px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
+
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
@@ -206,10 +222,11 @@
 
   &__submit-block {
     @media ($mobile-width-only) {
-      @include container;
+       @include container;
     }
+
     @media ($tablet-width) {
-      @include clearfix;
+       @include clearfix;
       order: 6;
       flex-basis: 100%;
     }
@@ -225,16 +242,18 @@
     border-radius: 3px;
     background-color: $green;
 
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
+
     @media ($tablet-width) {
       float: left;
     }
+
     @media ($mobile-width-only) {
       width: 280px;
     }
@@ -243,8 +262,7 @@
   &__note {
     display: block;
     margin: 0 auto;
-
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -277,19 +295,21 @@
 
   &__legend {
     display: block;
-    padding: 0 12px;
-    padding-top: 40px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    padding: 40px 12px 0;
+
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
     color: $pink;
+
     @media ($tablet-width) {
       display: block;
       padding-top: 0;
     }
+
     @media ($desktop-width) {
       display: block;
       padding-top: 0;
@@ -307,10 +327,9 @@
     box-sizing: border-box;
     padding: 20px;
     margin-top: 20px;
-
     border: 2px solid $middle-grey;
 
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 20px;
@@ -341,7 +360,6 @@
     height: 38px;
     left: -70px;
     top: -5px;
-
     background-color: #FFFFFF;
     border: 2px solid $middle-grey;
   }
@@ -384,7 +402,6 @@
     border-radius: 50%;
     left: -70px;
     top: -5px;
-
     background-color: #FFFFFF;
     border: 2px solid $middle-grey;
   }
