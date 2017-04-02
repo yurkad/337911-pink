@@ -26,7 +26,7 @@
     display: block;
 
     @media ($mobile-width-only) {
-       @include container;
+      @include container;
     }
 
     @media ($tablet-width) {
@@ -78,7 +78,7 @@
       }
 
       @media ($desktop-width) {
-         @include clearfix;
+        @include clearfix;
       }
     }
 
@@ -222,11 +222,11 @@
 
   &__submit-block {
     @media ($mobile-width-only) {
-       @include container;
+      @include container;
     }
 
     @media ($tablet-width) {
-       @include clearfix;
+      @include clearfix;
       order: 6;
       flex-basis: 100%;
     }
