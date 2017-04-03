@@ -7,7 +7,6 @@
 }
 
 @mixin container {
-  outline: 3px dashed yellowgreen;
   width: 280px;
   margin: 0 auto;
   @media ($tablet-width) {

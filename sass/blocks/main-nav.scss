@@ -8,6 +8,45 @@
   }
 
   &__wrapper {
+
+    &--nojs {
+      position: relative;
+      top: -72px;
+      width: 100%;
+      z-index: 9;
+      padding-top: 78px;
+      background-color: #283645;
+
+      @media ($tablet-width) {
+        top: -109px;
+        left: -10%;
+        padding-top: 108px;
+        width: 120%;
+      }
+    }
+
+    &--nojs::before {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      width: 76px;
+      height: 24px;
+      background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
+
+      @media ($tablet-width) {
+        left: 10.5%;
+        width: 150px;
+        height: 42px;
+        background: url("../../img/logo-pink-white-tablet.svg") no-repeat;
+      }
+
+      @media ($desktop-width) {
+        content: none;
+      }
+    }
+
+
     &--opened {
       position: absolute;
       top: -72px;
@@ -37,7 +76,7 @@
         left: 10.5%;
         width: 150px;
         height: 42px;
-        background: url("../../img/logo-pink-white-mobile.svg") no-repeat;
+        background: url("../../img/logo-pink-white-tablet.svg") no-repeat;
       }
 
       @media ($desktop-width) {
@@ -88,6 +127,10 @@
     @media ($tablet-width) {
       top: -72px;
     }
+  }
+
+  &__toggle--nojs {
+    display: none;
   }
 
   &__items {

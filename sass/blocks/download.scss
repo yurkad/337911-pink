@@ -11,8 +11,8 @@
 
   &__btn {
     display: block;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin-top: 29px;
+    margin-bottom: 35px;
     padding: 18px 33px;
 
     font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -38,10 +38,10 @@
   &__links {
     @include no-list;
     display: block;
-    margin: 0 auto;
+    margin: 30px;
     font-size: 0;
     width: 230px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @media ($tablet-width) {
       margin-bottom: 40px;
@@ -54,7 +54,8 @@
 
   &__icons {
     display: inline-block;
-    margin-right: 32px;
+    vertical-align: middle;
+    margin-right: 25px;
 
     &:last-child {
       margin-right: 0;
@@ -63,12 +64,13 @@
 
   &__link {
     display: inline-block;
+    vertical-align: middle;
     width: 55px;
     height: 55px;
     font-size: 0;
 
     &--apple {
-      background: url("../../img/logo-apple.svg") no-repeat 50% 50%;
+      background: url("../../img/logo-apple.svg") no-repeat 100% 200%;
     }
 
     &--android {
@@ -106,6 +108,7 @@
 
   &__descr {
     margin: 0;
+    margin-bottom: -5px;
 
     font-family: "Open Sans Light", "Arial", sans-serif;
     font-weight: normal;
